@@ -1,0 +1,38 @@
+{
+  "name": "react-graphql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "rest-server": "node src/api/server/rest",
+    "graphql-server": "node src/api/server/graphql",
+    "rest-server-watch": "nodemon src/api/server/rest",
+    "graphql-server-watch": "nodemon src/api/server/graphql",
+    "server-watch": "yarn run rest-server & yarn run graphql-server",
+    "server": "yarn run rest-server & yarn run graphql-server",
+    "client": "nodemon  src/api/client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kunwardeep/graphql.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kunwardeep/graphql/issues"
+  },
+  "homepage": "https://github.com/kunwardeep/graphql#readme",
+  "dependencies": {
+    "@apollo/client": "^3.3.15",
+    "@apollo/react-hooks": "^4.0.0",
+    "apollo-server": "^2.21.0",
+    "axios": "^0.21.1",
+    "cross-fetch": "^3.1.4",
+    "express": "^4.17.1",
+    "graphql": "^15.5.0",
+    "react": "^17.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
