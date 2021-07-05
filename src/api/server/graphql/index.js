@@ -26,7 +26,7 @@ const typeDefs = gql`
   # clients can execute, along with the return type for each. In this
   # case, the "users" query returns an array of zero or more Books (defined above).
   type Query {
-    users(_id: String): [User]
+    users: [User]
   }
 `;
 
@@ -34,7 +34,7 @@ const typeDefs = gql`
 const resolvers = {
   Query: {
     users:() => {
-     return axios.get('http://localhost:3000')
+     return axios.get('http://localhost:3001')
         .then(response => {
                 return response.data;
         })

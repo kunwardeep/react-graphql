@@ -1,7 +1,7 @@
 var data = require('./data.json')
 var express = require('express')
 const app = express()
-const port = 3000
+const port = 3001
 app.set('json spaces', 2)
 
 // respond with "hello world" when a GET request is made to the homepage
